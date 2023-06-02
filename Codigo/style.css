@@ -1,0 +1,107 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+@media (max-width:320px){
+   html{
+      height: 100%;
+   }
+   body {
+      background-color: #567ca4;
+      font-size: 1em;
+      font-family: 'Times New Roman', Times, serif;
+      height: 100%;
+   }
+   .conteiner__header *{
+      text-decoration: underline;
+   }
+   .menu{
+      display: flex;
+      list-style: none;
+   }
+   .menu li{
+      margin: 0 5px;
+   }
+   ul li a {
+      text-decoration: none;
+      color: white;
+   }
+
+   div p{
+      font-size: 1em;
+   }
+   footer{
+      color: white;
+   }
+   .conteiner{
+      display: grid;
+      gap: 1em;
+      grid-template-areas:
+      "nav"
+      "header"
+      "main"
+      "footer";
+      grid-template-rows: 1fr 15% 1fr 1fr;
+   }
+   .conteiner__nav{
+      grid-area: nav;
+      text-align: end;
+      font-size: 1.2em;
+      background-color: #57a5e4;
+   }
+   .conteiner__header{
+      grid-area: header;
+      background-color: #57a5e4;
+      color: white;
+      text-align: center;
+      font-size: 1.2em;
+      padding: 1em;
+   }
+   .conteiner__main{
+      grid-area: main;
+      text-align: center;
+      background-color: #57a5e4;
+      font-size: 1.2em;
+   }
+   .conteiner__footer{
+      grid-area: footer;
+      background-color: #57a5e4;
+      text-align: center;
+      font-size: 1.2em;
+   }
+   .div-mapa{
+      display: flex;
+      justify-content: center;
+   }
+   .div-mapa iframe{
+      height: 14em;
+      width: 90%;
+      margin: 2em;
+   }
+
+   /* Galeria.html Y Similares.html */
+
+   .div-imagenes{
+      display: flex;
+      display: block;
+   }
+   .imagenes{
+      justify-content: center;
+      height: 12em;
+      width: 90%;
+      margin: 1em;
+      border: 10px solid #153365;
+   }
+   .div-video{
+      display: flex;
+      display: block;
+   }
+   .video{
+      width: 90%;
+      border: 10px solid #153365;
+   }
+   .enlace{
+      color: white;
+   }
+}
