@@ -3,6 +3,7 @@
    padding: 0;
    box-sizing: border-box;
 }
+
 @media (max-width:320px){
    html{
       height: 100%;
@@ -104,4 +105,115 @@
    .enlace{
       color: white;
    }
+}
+
+@media (min-width:1024px){
+   body {
+      font-family: 'Times New Roman', Times, serif;
+      background-image: url(./imagenes/aconcagua.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+      margin: 30px;
+   }
+   .conteiner {
+      display: grid;
+      gap: 1em;
+      grid-template-areas:
+      "nav"
+      "header"
+      "main"
+      "footer";
+      grid-template-rows: 7% 15% 1fr 7%;
+   }
+   .conteiner__nav{
+      grid-area: nav;
+   }
+   .conteiner__header{
+      grid-area: header;
+   }
+   .conteiner__main{
+      grid-area: main;
+   }
+   .conteiner__footer{
+      grid-area: footer;
+   }
+   .menu{
+      display: flex;
+      justify-content: end;
+      list-style: none;
+   }
+   .menu li{
+      margin: 1em;
+   }
+   li a{
+      text-decoration: none;
+      color: white;
+      font-size: 2em;
+   }
+   h1{
+      font-size: 4em;
+   }
+   h2{
+      font-size: 2em;
+      margin-left: 3em;
+      margin-right: 3em;
+   }
+   footer{
+      display: flex;
+      justify-content: center;
+      font-size: 2em;
+   }
+
+   /* Index.html */
+
+   .div-mapa{
+      display: flex;
+      justify-content: center;
+   }
+   .div-p{
+      display: flex;
+   }
+   div p{
+      text-align: center;
+      font-size: 1.3em;
+      color: white;
+      padding: 1em;
+   }
+
+   /* Galeria.html */
+
+   .div-imagenes{
+      display: flex;
+      justify-content: center;
+      background-color: #153365;
+   }
+   .div-video{
+      display: flex;
+      justify-content: center;
+      padding: 1em;
+   }
+   .video{
+      width: 46%;
+      height: 15em;
+   }
+
+   /* Informacion.html */
+
+   .conteiner__main p{
+      margin: 1em;
+      font-size: 1.4em;
+      font-weight: bold;
+      color: black;
+   }
+
+   /* Similares.html */
+
+   .conteiner__main img{
+      padding: 2em;
+      height: 22em;
+      width: 26em;
+   }
+
 }
