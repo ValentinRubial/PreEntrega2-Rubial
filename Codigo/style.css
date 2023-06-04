@@ -102,7 +102,8 @@
       width: 90%;
       border: 10px solid #153365;
    }
-   .enlace{
+   .enlaces{
+      margin: 4em;
       color: white;
    }
 }
@@ -187,7 +188,6 @@
    .div-imagenes{
       display: flex;
       justify-content: center;
-      background-color: #153365;
    }
    .div-video{
       display: flex;
@@ -196,7 +196,7 @@
    }
    .video{
       width: 46%;
-      height: 15em;
+      height: 22em;
    }
 
    /* Informacion.html */
@@ -210,10 +210,28 @@
 
    /* Similares.html */
 
-   .conteiner__main img{
-      padding: 2em;
-      height: 22em;
-      width: 26em;
+   .div-img-similares{
+      display: flex;
+      align-items: center;
+      justify-content: center;
    }
-
+   .imagenes{
+      background-color: #153365;
+      margin-top: 4em;
+      padding: 2em;
+      height: 18em;
+      width: 21em;
+   }
+   .div-e{
+      display: flex;
+      justify-content: center;
+      margin: 16px;
+   }
+   .enlaces{
+      padding: 1,4em;
+      margin: 2em 5em;
+      font-size: 1.6em;
+      font-weight: bold;
+      color: black;
+   }
 }
